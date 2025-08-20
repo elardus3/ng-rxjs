@@ -1,0 +1,43 @@
+:root {
+  --light-fg: black;
+  --light-bg: white;
+  --dark-fg: #ccc;
+  --dark-bg: #222;
+  color-scheme: light dark;
+}
+
+body {
+  margin: 1rem;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  color: light-dark(var(--light-fg), var(--dark-fg));
+  background-color: light-dark(var(--light-bg), var(--dark-bg));
+}
+
+nav {
+  text-align: center;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  padding: 0.5rem;
+  display: inline-block;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: light-dark(blue, dodgerblue);
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+.active {
+  color: light-dark(var(--light-fg), var(--dark-fg));
+}

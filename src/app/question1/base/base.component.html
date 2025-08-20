@@ -1,0 +1,18 @@
+<section>
+  <div><em>Display random images {{displayOrder === 0 ? 'fastest first' : 'in order'}}.</em></div>
+  <div><em>Image requests are {{isCancellable ? '' : 'not'}} cancellable.</em></div>
+</section>
+
+<section class="images">
+  @for(image of images; track $index) {
+    <div>
+      <img [src]="image" [class.received]="received[$index]" alt="random image {{$index}}"/>
+    </div>
+  }
+</section>
+
+@if (isCancellable) {
+  <section>
+    <button (click)="onCancel()" [disabled]="isCancelled">Cancel image requests</button>
+  </section>
+}

@@ -1,0 +1,105 @@
+nav,
+form {
+  max-width: 30rem;
+}
+
+nav div {
+  --light-bg: #f6f6f7;
+  --light-highlight: #5b5b61;
+  --light-border: #aaa;
+  --dark-bg: #333;
+  --dark-highlight: #999;
+  -webkit-tap-highlight-color: transparent;
+  display: grid;
+  grid: 1fr / 16px auto 16px;
+  align-items: center;
+  border: solid var(--light-border);
+  border-width: 1px 0;
+  text-decoration: none;
+  background: light-dark(var(--light-bg), var(--dark-bg));
+
+  &:first-child {
+    border-radius: 0.25rem 0 0 0.25rem;
+    border-width: 1px 0 1px 1px;
+    grid: 1fr / auto 1rem;
+  }
+  &:last-child {
+    border-radius: 0 0.25rem 0.25rem 0;
+    border-width: 1px 1px 1px 0;
+    grid: 1fr / 1rem auto;
+  }
+  &:not(:first-child):before,
+  &:not(:last-child):after {
+    display: block;
+    border: 1rem solid transparent;
+    border-right-width: 0;
+    content: '';
+  }
+  &:not(:first-child):before {
+    border-left-color: var(--light-border);
+  }
+  &:not(:last-child):after {
+    transform: translateX(calc(1rem - 1px));
+    border-left-color: light-dark(var(--light-bg), var(--dark-bg));
+  }
+
+  span {
+    padding: 0 0.25rem 0 0.75rem;
+    color: light-dark(var(--light-fg), var(--dark-fg));
+  }
+
+  &.current {
+    background: light-dark(var(--light-highlight), var(--dark-highlight));
+  }
+  &.current span {
+    color: light-dark(white, var(--light-fg));
+  }
+  &.current:not(:first-child):before {
+    border-left-color: light-dark(var(--light-highlight), var(--dark-highlight));
+  }
+  &.current:not(:last-child):after {
+    border-left-color: light-dark(var(--light-highlight), var(--dark-highlight));
+  }
+}
+
+nav {
+  display: grid;
+  grid: 1fr / auto-flow auto;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem auto;
+}
+
+form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  div {
+    margin-top: 1rem;
+    display: flex;
+  }
+}
+
+label,
+input {
+  margin: 0.5rem;
+}
+
+input {
+  padding: 0.25rem 0.5rem;
+  font: inherit;
+  border-radius: 0.25rem;
+  border: 1px solid light-dark(#ccc, #333);
+  background: rgba(0, 0, 255, 0.1);
+
+  &:focus {
+    border-color: dodgerblue;
+  }
+}
+
+button {
+  flex-grow: 1;
+  margin: 0.5rem 1rem;
+  padding: 0.5rem 1rem;
+}
