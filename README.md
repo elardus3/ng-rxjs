@@ -17,7 +17,7 @@ A:
 By using subjects, observers and the concat operator of rxjs, see Question 1 Part 1
 in sample app and a sample screenshot.
 
-[<img src="https://raw.githubusercontent.com/elardus3/ng-rxjs/refs/heads/main/public/q1p1.webp" alt="Question 1 Part 1 screenshot" style="width:33%; height:auto;">](https://raw.githubusercontent.com/elardus3/ng-rxjs/refs/heads/main/public/q1p1.webp{target="_blank"})
+<a href="https://raw.githubusercontent.com/elardus3/ng-rxjs/refs/heads/main/public/q1p1.webp" target="_blank"><img src="https://raw.githubusercontent.com/elardus3/ng-rxjs/refs/heads/main/public/q1p1.webp" alt="Question 1 Part 1 screenshot" style="width:33%; height:auto;"></a>
 
 ### Part 2
 
@@ -26,7 +26,7 @@ change (using the solution before)._
 
 A: Use the merge operator instead of concat, see Question 1 Part 2 in sample app.
 
-[<img src="https://raw.githubusercontent.com/elardus3/ng-rxjs/refs/heads/main/public/q1p2.webp" alt="Question 1 Part 2 screenshot" style="width:33%; height:auto;">](https://raw.githubusercontent.com/elardus3/ng-rxjs/refs/heads/main/public/q1p2.webp{target="_blank"})
+<a href="https://raw.githubusercontent.com/elardus3/ng-rxjs/refs/heads/main/public/q1p2.webp" target="_blank"><img src="https://raw.githubusercontent.com/elardus3/ng-rxjs/refs/heads/main/public/q1p2.webp" alt="Question 1 Part 2 screenshot" style="width:33%; height:auto;"></a>
 
 ### Part 3
 
@@ -35,7 +35,7 @@ from completing / running (cancel them) or just to wait for the current calls to
 
 A: Unsubscribe the observable, see Question 1 Part 3 in sample app.
 
-[<img src="https://raw.githubusercontent.com/elardus3/ng-rxjs/refs/heads/main/public/q1p3.webp" alt="Question 1 Part 3 screenshot" style="width:33%; height:auto;">](https://raw.githubusercontent.com/elardus3/ng-rxjs/refs/heads/main/public/q1p3.webp{target="_blank"})
+<a href="https://raw.githubusercontent.com/elardus3/ng-rxjs/refs/heads/main/public/q1p3.webp" target="_blank"><img src="https://raw.githubusercontent.com/elardus3/ng-rxjs/refs/heads/main/public/q1p3.webp" alt="Question 1 Part 3 screenshot" style="width:33%; height:auto;"></a>
 
 # Question 2
 
@@ -43,7 +43,7 @@ A: I created the sample layout using CSS grid, see Question 2 in sample app.
 
 _All routes in the app are dark mode aware depending on the operating system default._
 
-[<img src="https://raw.githubusercontent.com/elardus3/ng-rxjs/refs/heads/main/public/q2.webp" alt="Question 2 screenshot" style="width:33%; height:auto;">](https://raw.githubusercontent.com/elardus3/ng-rxjs/refs/heads/main/public/q2.webp{target="_blank"})
+<a href="https://raw.githubusercontent.com/elardus3/ng-rxjs/refs/heads/main/public/q2.webp" target="_blank"><img src="https://raw.githubusercontent.com/elardus3/ng-rxjs/refs/heads/main/public/q2.webp" alt="Question 2 screenshot" style="width:33%; height:auto;"></a>
 
 # Question 3
 
@@ -69,7 +69,7 @@ item is grouped together in the viewport.
 Vertical scrolling is a more common user expected interaction than horizontal scrolling
 on a desktop, and even moreso on mobile devices. See Question 3 in sample app.
 
-[<img src="https://raw.githubusercontent.com/elardus3/ng-rxjs/refs/heads/main/public/q3.webp" alt="Question 3 screenshot" style="width:33%; height:auto;">](https://raw.githubusercontent.com/elardus3/ng-rxjs/refs/heads/main/public/q3.webp{target="_blank"})
+<a href="https://raw.githubusercontent.com/elardus3/ng-rxjs/refs/heads/main/public/q3.webp" target="_blank"><img src="https://raw.githubusercontent.com/elardus3/ng-rxjs/refs/heads/main/public/q3.webp" alt="Question 3 screenshot" style="width:33%; height:auto;"></a>
 
 # Question 4
 
